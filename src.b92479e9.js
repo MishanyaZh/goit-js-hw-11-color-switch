@@ -1,6 +1,8 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"clu1":[function(require,module,exports) {
 
-},{"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"]}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");
-},{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.9139aab2.js.map
+},{}],"dF6L":[function(require,module,exports) {
+const t=["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"],e=document.querySelector('[data-action="start"]'),n=document.querySelector('[data-action="stop"]'),o=document.querySelector("body"),c=(t,e)=>Math.floor(Math.random()*(e-t+1)+t);function a(){const e=t.length-1,n=c(0,e);document.body.style.backgroundColor=`${t[n]}`}e.addEventListener("click",r),n.addEventListener("click",u);let d=null,l=!1;function r(t){l||(l=!0,e.disabled=!0,d=setInterval(a,1e3))}function u(t){clearInterval(d),l=!1,e.disabled=!1}
+},{}],"Focm":[function(require,module,exports) {
+"use strict";require("./sass/main.scss"),require("./js/switch");
+},{"./sass/main.scss":"clu1","./js/switch":"dF6L"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.b92479e9.js.map
